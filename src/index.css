@@ -45,6 +45,10 @@ img{
 .flex{
     display: flex;
 }
+.i-flex{
+    display: inline-flex;
+    align-items: center;
+}
 .grid{
     display: grid;
 }
@@ -106,7 +110,7 @@ header .container .logo a{
         color: var(--white);
     }
     header .container nav img.menu-icon{
-        width: 30px;
+        width: 25px;
     }
 }
 @media (min-width:992px) {
@@ -148,6 +152,39 @@ section:not(.hero){
 @media (min-width:992px) {
 .hero .container{
     grid-template-columns: 40% 45%;
-    justify-content: space-around;
+    justify-content: space-between;
 }
+}
+.about-me .container{
+    align-items: center;
+    justify-content: center;
+    gap:40px 130px;
+}
+.about-me .container .details p{
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: var(--fs-16px);
+    color: var(--gray);
+}
+.about-me .container .details .btns{
+    gap: 10px;
+}
+.about-me .container .details .btns a:last-child{
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: var(--fs-16px);
+    font-weight: 500;
+    border: 2px solid var(--dark-gunmetal);
+    color: var(--dark-gunmetal);
+}
+@media (max-width:991px) {
+.about-me .container h2{
+    text-align: center;
+}
+}
+@media (min-width:992px) {
+    .about-me .container{
+        grid-template-columns: 15% 45%;
+        justify-content: space-between;
+    }
 }

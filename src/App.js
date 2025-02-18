@@ -1,4 +1,5 @@
-import HeroSection from "./components/Hero";
+import About from "./components/About";
+import Hero from "./components/Hero";
 import Header from "./components/layout/Header";
 
 function App() {
@@ -6,7 +7,8 @@ function App() {
     <>
     <Header />
     <main>
-      <HeroSection />
+      <Hero />
+      <About />
     </main>
     </>
   );
