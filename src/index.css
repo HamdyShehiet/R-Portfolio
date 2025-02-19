@@ -49,6 +49,10 @@ img{
     display: inline-flex;
     align-items: center;
 }
+.flex-column-center{
+    flex-direction: column;
+    align-items: center;
+}
 .grid{
     display: grid;
 }
@@ -66,6 +70,11 @@ h1.title{
 h2.title{
     font-size: var(--fs-40px);
     color: var(--dark-gunmetal);
+}
+.description{
+    line-height: 1.6;
+    font-size: var(--fs-16px);
+    color: var(--gray);
 }
 .hire-me{
     display: inline-block;
@@ -162,9 +171,6 @@ section:not(.hero){
 }
 .about-me .container .details p{
     margin-bottom: 20px;
-    line-height: 1.6;
-    font-size: var(--fs-16px);
-    color: var(--gray);
 }
 .about-me .container .details .btns{
     gap: 10px;
@@ -187,4 +193,33 @@ section:not(.hero){
         grid-template-columns: 15% 45%;
         justify-content: space-between;
     }
+}
+.services{
+    background-color: var(--platinum);
+}
+.services .container{
+    gap: 25px;
+}
+.services .container .services-list{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+}
+.services .container .services-list .service{
+    gap: 25px;
+    width: 280px;
+    padding:30px 20px;
+    border-radius: 12px;
+    font-weight: 500;
+    background-color: var(--dark-gunmetal);
+    color: var(--white);
+}
+.services .container .services-list .service h3{
+    font-size: var(--fs-20px);
+}
+.services .container .services-list .service p{
+    text-align: center;
+    font-size: var(--fs-16px);
+    color: rgb(255 255 255 /0.6);
 }

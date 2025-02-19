@@ -5,7 +5,7 @@ function Header() {
     <div className="container flex align-center">
         <div className="logo"><a href="index.html">R</a></div>
         <nav>
-            <img className="menu-icon" src="/icons/menu.webp" alt="Menu Icon" />
+            <img className="menu-icon" src="./icons/menu.webp" alt="Menu Icon" />
             <ul className="menu">
                 <li ><a href="#home" className="active">Home</a></li>
                 <li><a href="#about">About</a></li>
