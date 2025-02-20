@@ -36,6 +36,8 @@ a{
 }
 input,
 textarea{
+    font: inherit;
+    color: inherit;
     outline: none;
     border: none;
 }
@@ -255,4 +257,61 @@ section:not(.hero){
     width: 100%;
     height: 100%;
     background-color: var(--gray);
+}
+.contact{
+    background-color: var(--platinum);
+}
+.contact .container .contact-info{
+    gap:40px 80px;
+    margin-top: 30px;
+}
+@media (min-width:992px) {
+    .contact .container .contact-info{
+        grid-template-columns: 60% 30%; 
+        justify-content: space-between;
+    }
+}
+.contact .container .contact-info h3{
+    margin-bottom: 20px;
+    font-size: var(--fs-20px);
+    color: var(--dark-gunmetal);
+}
+.contact .container .contact-info .form-box form{
+    flex-direction: column;
+    gap: 20px;
+}
+.contact .container .contact-info .form-box .user-details{
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: var(--fs-16px);
+    color: var(--platinum);
+}
+.contact .container .contact-info .form-box .user-details>input {
+    flex-grow: 1;
+    width: calc(100% / 2 - 10px);
+    padding: 10px;
+    border-radius: 8px; 
+    background-color: #212529;
+}
+.contact .container .contact-info .form-box form textarea{
+    max-width: 100%;
+    max-height: 100px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #212529;
+}
+.contact .container .contact-info .form-box form >input{
+    align-self: end;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    color: var(--dark-gunmetal);
+}
+.contact .container .contact-info .social-links ul li a{
+    display:inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-size: var(--fs-18px);
+    color: var(--dark-gunmetal);
 }

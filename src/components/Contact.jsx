@@ -3,16 +3,16 @@ function Contact() {
         <section class="contact" id="contact">
             <div class="container">
                 <h2 class="title text-center">Contact</h2>
-                <div class="contact-info">
+                <div class="contact-info grid">
                     <div class="form-box">
                         <h3>Send Me Message</h3>
-                        <form method="post">
-                            <div class="user-details">
+                        <form method="post" className="flex">
+                            <div class="user-details flex align-center">
                             <input type="email" name="email" id="email" placeholder="Email" required />
                             <input type="text" name="name" id="name" placeholder="Name" required />
                             </div>
                             <textarea name="message" id="message" placeholder="Message" required></textarea>
-                            <div class="submit"><input type="submit" value="Send" /></div>
+                            <input type="submit" value="Send"/>
                         </form>
                     </div>
                     <div class="social-links">
