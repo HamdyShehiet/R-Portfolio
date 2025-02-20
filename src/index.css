@@ -65,7 +65,7 @@ img{
     text-align: center;
 }
 h1.title{
-    line-height: 120%;
+    line-height: 1.2;
     font-size: var(--fs-54px);
     color: var(--dark-gunmetal);
 }
@@ -314,4 +314,13 @@ section:not(.hero){
     margin-bottom: 10px;
     font-size: var(--fs-18px);
     color: var(--dark-gunmetal);
+}
+footer {
+    padding: 20px 0;
+    background-color: var(--dark-gunmetal);
+}
+footer .container p{
+    font-size: var(--fs-18px);
+    font-weight: 500;
+    color: var(--white);
 }
