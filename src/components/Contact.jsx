@@ -1,13 +1,13 @@
 function Contact() {
     return (
-        <section class="contact" id="contact">
-            <div class="container">
-                <h2 class="title text-center">Contact</h2>
-                <div class="contact-info grid">
-                    <div class="form-box">
+        <section className="contact" id="contact">
+            <div className="container">
+                <h2 className="title text-center">Contact</h2>
+                <div className="contact-info grid">
+                    <div className="form-box">
                         <h3>Send Me Message</h3>
                         <form method="post" className="flex">
-                            <div class="user-details flex align-center">
+                            <div className="user-details flex align-center">
                             <input type="email" name="email" id="email" placeholder="Email" required />
                             <input type="text" name="name" id="name" placeholder="Name" required />
                             </div>
@@ -15,7 +15,7 @@ function Contact() {
                             <input type="submit" value="Send"/>
                         </form>
                     </div>
-                    <div class="social-links">
+                    <div className="social-links">
                         <h3>Send Me Message</h3>
                         <ul>
                             <li><a href="/"><img src="/icons/whatsapp.png" alt="Whatsapp Icon" /><span>089522231321</span></a></li>
