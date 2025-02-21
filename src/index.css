@@ -7,6 +7,7 @@
     --fs-16px:16px;
     --fs-18px:18px;
     --fs-20px:20px;
+    --fs-30px:30px;
     --fs-40px:40px;
     --fs-54px:54px;
     --fw-600:600;
@@ -35,7 +36,8 @@ a{
     text-decoration: none;
 }
 input,
-textarea{
+textarea,
+button{
     font: inherit;
     color: inherit;
     outline: none;
@@ -99,33 +101,40 @@ header .container{
     justify-content: space-between;
 }
 header .container .logo a{
-    display: inline-block;
-    font-size: 30px;
+    display: inline-flex;
+    font-size: var(--fs-30px);
     font-weight: 600;
     color: var(--white);
 }
 @media (max-width:991px) {
     header .container nav ul{
         position: fixed;
-        top: 90px;
+        top: 80px;
         right: -100%;
-        width: 200px;
+        width: 230px;
         padding: 10px;
-        text-align: center;
         border-radius: 8px;
         background-color: #212529;
     }
+    header .container nav ul.openMenu{
+        right: 20px;
+    }
     header .container nav ul li a{
-        display: inline-block;
+        display: block;
         margin: 10px 0;
+        text-align: center;
         color: var(--white);
     }
-    header .container nav img.menu-icon{
+    header .container nav button{
+        cursor: pointer;
+        background-color: transparent;
+    }
+    header .container nav button img{
         width: 25px;
     }
 }
 @media (min-width:992px) {
-    header .container nav img.menu-icon{
+    header .container nav button{
         display: none;
     }
     header .container nav ul{
