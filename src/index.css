@@ -88,6 +88,7 @@ h2.title{
     border-radius: 8px;
     background-color: var(--dark-gunmetal);
     color: var(--white);
+    cursor: pointer;
 }
 header{
     position: sticky;
@@ -194,6 +195,8 @@ section:not(.hero){
     font-weight: 500;
     border: 2px solid var(--dark-gunmetal);
     color: var(--dark-gunmetal);
+    cursor: pointer;
+
 }
 @media (max-width:991px) {
 .about-me .container h2{
@@ -310,12 +313,13 @@ section:not(.hero){
     border-radius: 8px;
     background-color: #212529;
 }
-.contact .container .contact-info .form-box form >input{
+.contact .container .contact-info .form-box form>input{
     align-self: end;
     padding: 10px 15px;
     border-radius: 8px;
     font-weight: 600;
     color: var(--dark-gunmetal);
+    cursor: pointer;
 }
 .contact .container .contact-info .social-links ul li a{
     display:inline-flex;
